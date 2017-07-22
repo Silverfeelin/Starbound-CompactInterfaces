@@ -1,0 +1,8 @@
+{
+  "name" : "CompactInterfaces",
+  "friendlyName" : "Compact Interfaces",
+  "priority" : -999,
+  "version" : "1.3.2",
+  "author" : "Silverfeelin",
+  "description" : "Provides templates for some simple, compact interfaces."
+}
