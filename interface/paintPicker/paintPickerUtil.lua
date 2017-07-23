@@ -35,5 +35,5 @@ end
 function setSerializedColor(color)
   local cType = type(color)
   if cType ~= "string" and cType ~= "nil" then error("setSerializeColor expected a string or nil.") end
-  status.setStatusProperty(serializationKey, color:lower())
+  status.setStatusProperty(serializationKey, color and color:lower())
 end
