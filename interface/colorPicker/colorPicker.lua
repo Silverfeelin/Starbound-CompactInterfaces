@@ -96,7 +96,7 @@ function selectColorFromPosition(pos)
   local color = spectrum[colorPos[1]][colorPos[2]]
 
   -- Set image
-  local img = "/interface/colorPicker/indicator.png?replace;ffffff="..num2hex(color[1])..num2hex(color[2])..num2hex(color[3])
+  local img = "/interface/colorPicker/indicator.png?replace;ffffff="..string.format("%02x", color[1])..string.format("%02x", color[2])..string.format("%02x", color[3])
   canvas:clear()
   canvas:drawImage(img, pos)
 
